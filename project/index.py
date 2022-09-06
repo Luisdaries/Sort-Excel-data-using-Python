@@ -1,3 +1,4 @@
+from operator import index
 import pandas as pd
 import numpy as np
 import openpyxl
@@ -11,12 +12,20 @@ file = filename
 
 
 data = pd.read_excel(file,sheet_name = 0, index_col=0)
-# print(data.head())
-print(sheets.sheetnames)
 
-
+def index():
+    getsheetname(file)
 
 def getsheetname(file):
     sheets  = openpyxl.load_workbook(file)
+    print(sheets.sheetnames)
 
-    
+def converttlist():
+    print()
+    # print(sheets.sheetnames)
+
+def printsheetnames():
+    print(sheets.sheetnames)
+
+
+index()
