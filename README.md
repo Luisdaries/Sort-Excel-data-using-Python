@@ -1,6 +1,6 @@
 # Sort-Excel-data-using-Python
 
-Install requirements
+Install requirements.txt
 
 Other necessary libaries
 
